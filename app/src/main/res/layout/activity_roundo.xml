@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/roundo_toolbar"
+        android:background="@color/bule"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/Theme_toolbar_menu"
+        android:layout_height="50dp">
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/roundo_dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/roundo_rl"
+            android:background="#ff60b7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/roundo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#2c6ded"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/roundo_bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="finish"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:layout_alignTop="@+id/roundo_bu"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/drawer_rl"
+            android:layout_gravity="left"
+            android:background="#4840e2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/drawer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/drawer_bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show"
+                />
+            <TextView
+                android:id="@+id/dra_show1_tv"
+                android:layout_marginTop="80dp"
+                android:text="第一页"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/dra_show2_tv"
+                android:layout_marginTop="110dp"
+                android:text="第二页"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/dra_show3_tv"
+                android:layout_marginTop="140dp"
+                android:text="第三页"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
